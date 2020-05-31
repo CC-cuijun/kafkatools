@@ -1,16 +1,8 @@
 #!/bin/sh
 
-zk=10.7.97.176:2181,10.7.97.177:2181,10.7.97.178:2181
-#zk=172.20.66.120:2181
-#topicName=vehicle.drive.action.topic
-#topicName=global-status
-#topicName=veh.signal.data
-topicName=s4_vehicle-position-topic-41
-#topicName=s4_veh.signal.data
-#groupName=HeartbeatCollector
-#groupName=vehicleStatusIndex
-#groupName=dataParseConsumers
-groupName=s4_vehicleStatusConsumer41x
+zk=10.11.12.13:2181,10.12.13.11:2181,127.0.0.1:2181
+topicName=test
+groupName=tester
 partitionNum=3
 kafka_dir=/usr/hdp/2.5.3.0-37/kafka
 
