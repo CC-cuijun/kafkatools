@@ -15,9 +15,6 @@ public class KafkaProducer {
     private static Logger logger = Logger.getLogger(KafkaProducer.class);
 
 
-    //private static final String TOPIC = "VehicleStatus";
-    //private static final int THREAD_AMOUNT = 2000;
-
     public static void main(String[] args) {
         Properties props = new Properties();
 
