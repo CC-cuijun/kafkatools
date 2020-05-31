@@ -2,19 +2,12 @@
 # Create by cuijun 2015-12-24
 # Update 2016-03-24
  
-#kafka_dir=/usr/hdp/2.5.3.0-37/kafka
 kafka_dir=/opt/kafka
 kafka_conf=$kafka_dir/config/server.properties 
-kafka_broker_list=172.20.28.47:9092
-#kafka_broker_list=10.7.97.176:9092,10.7.97.177:9092,10.7.97.178:9092
-#kafka_broker_list=10.224.32.21:9092
-#kafka_broker_list=172.20.61.117:9092
-#kafka_broker_list=172.20.66.221:9092
-logdir=/var/log/tima/kafka
-#zookeeper=172.20.66.89:2181
-#zookeeper=172.20.66.97:2181
-zookeeper=172.20.28.47:2181
-#zookeeper=10.7.97.176:2181,10.7.97.177:2181,10.7.97.178:2181
+kafka_broker_list=127.0.0.1:9092,10.11.12.13:9092,10.11.12.13:9092
+
+logdir=/opt/logs/kafka
+zookeeper=127.0.0.1:2181
 partition=4
 replication=1
 
