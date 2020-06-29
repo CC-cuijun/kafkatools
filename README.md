@@ -31,4 +31,21 @@ Usage:
 ./run_kafka.sh watch|send|create|delete topicname
 </pre>
 kafka_offset.sh使用方式：  
+step1.修改脚本：  
+<pre>
+# zk配置
+zk=10.11.12.13:2181,10.12.13.11:2181,127.0.0.1:2181
+# topic配置
+topicName=test
+# comsumer配置
+groupName=tester
+# partition配置
+partitionNum=3
+# kafka路径配置
+kafka_dir=/opt/kafka
+</pre>
+step2.脚本使用方式：
+<pre>
+./kafka_offset.sh
+</pre>
 jar包使用方式（消息发送及内容替换代码需要优化，否则将报错，需要尽快优化）：  
