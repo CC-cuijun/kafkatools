@@ -1,10 +1,15 @@
 #!/bin/sh
 
+# zk配置
 zk=10.11.12.13:2181,10.12.13.11:2181,127.0.0.1:2181
+# topic配置
 topicName=test
+# comsumer配置
 groupName=tester
+# partition配置
 partitionNum=3
-kafka_dir=/usr/hdp/2.5.3.0-37/kafka
+# kafka路径配置
+kafka_dir=/opt/kafka
 
 while true;do
 $kafka_dir/bin/kafka-consumer-offset-checker.sh --zookeeper=$zk --topic=$topicName --group=$groupName|tee -a results.txt
